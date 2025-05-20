@@ -1,0 +1,36 @@
+.containerOftrending {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    .TrendingNow {
+        padding: .5em;
+        margin: .5em;
+        border: .5px solid #000;
+        border-radius: .5em;
+        del {
+            opacity: .5;
+        }
+    }
+}
+.titleOfSecesion {
+    text-align: center;
+    font-weight: bold;
+}
+@media (max-width: 767px) {
+    .containerOftrending {
+        display: grid;
+    }
+}
+@media (max-width: 970px) {
+    .containerOftrending {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 1024px) {
+    .containerOftrending {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,86 @@
+.mainOfShop {
+    padding: .2em;
+    padding-top: 2em;
+    margin: .2em;
+    gap: .5em;
+    display: flex;
+    justify-content: space-between;
+    .mainOfCardOfProductsByRating {
+        justify-content: center;
+        border: 1px solid #000;
+        border-radius: .5em;
+        padding: 1em;
+        margin: 1em;
+        width: 95%;
+    }
+    .imgOfRating {
+        height: 50px;
+        width: 50px;
+    }
+    .pbr {
+        display: flex;
+        gap: 2em;
+    }
+    .ProductCategories {
+        justify-content: center;
+        border: 1px solid #000;
+        border-radius: .5em;
+        padding: 1em;
+        margin: 1em;
+        width: 95%;
+    }
+    span {
+        color: orangered;
+        font-size: large;
+        font-weight: bold;
+    }
+    .cardOfDataShop {
+        border: 1px solid;
+        border-radius: .5em;
+        padding: 1em;
+        margin: 1em;
+        width: fit-content;
+        text-align: center;
+    }
+    .data_shop {
+        display: flex;
+    }
+    .cardOfDataShop>img {
+        width: 200px;
+        height: 200px;
+    }
+    .cardOfDataShop>button {
+        width: 100%;
+        cursor: pointer;
+    }
+}
+@media (max-width: 768px) {
+    .mainOfShop {
+        display: grid;
+    }
+    .data_shop {
+        display: grid;
+    }
+    .cardOfDataShop>img {
+        width: 300px;
+        height: 300px;
+    }
+    .BarOfShop {
+        width: fit-content;
+        max-width: 100%;
+    }
+}
+@media (max-width: 970px) {
+    .mainOfShop {
+        display: grid;
+    }
+    .data_shop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cardOfDataShop>img {
+        width: 300px;
+        height: 300px;
+    }
+}
