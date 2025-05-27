@@ -2,6 +2,8 @@ import React from 'react'
 import { GrMapLocation } from "react-icons/gr";
 import { Link } from 'react-router';
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
+import { TbArrowBigUpLinesFilled } from "react-icons/tb";
+
 import '../style/components/_footer.scss'
 
 export default function Footer() {
@@ -47,7 +49,7 @@ export default function Footer() {
       </div>
       <div>
         <img src="footer-logo.png" alt="" />
-        <button onClick={scrollfunction}>BACK TOP <FaRegArrowAltCircleUp /></button>
+        <TbArrowBigUpLinesFilled onClick={scrollfunction} className='backToTop'/>
       </div>
     </div>
   )
